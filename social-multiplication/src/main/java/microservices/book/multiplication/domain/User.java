@@ -5,19 +5,14 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
-/**
- * This class represents a Multiplication in our application.
- */
 @RequiredArgsConstructor
 @Getter
 @ToString
 @EqualsAndHashCode
-public final class Multiplication {
-    private final int factorA;
-    private final int factorB;
+public class User {
+    private final String alias;
 
-    Multiplication(){
-        this(0,0);
+    protected User(){
+        alias=null;
     }
 }
-
