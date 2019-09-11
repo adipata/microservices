@@ -28,7 +28,7 @@ $(document).ready(function() {
             userAlias = $form.find( "input[name='user-alias']" ).val();
 
         // Compose the data in the format that the API is expecting
-        var data = { user: { alias: userAlias}, multiplication: {factorA: a, factorB: b}, resultAttempt: attempt};
+        var data = { user: { alias: userAlias}, multiplication: {factorA: a, factorB: b}, resultAttempt: attempt, correct: false};
 
         // Send the data using post
         $.ajax({
